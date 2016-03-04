@@ -10,9 +10,12 @@ $ npm install --save errorable-session
 ## Usage
 
 ```js
+var errorable = require('errorable');
 var errorableSession = require('errorable-session');
+var Generator = errorable.Generator;
+var cnErrors = new Generator(errorableSession, 'zh-CN').errors;
+var enUsErrors = new Generator(errorableSession, 'en-US').errors;
 
-errorableSession('Rainbow');
 ```
 ## License
 
