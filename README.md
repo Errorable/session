@@ -16,6 +16,10 @@ var Generator = errorable.Generator;
 var cnErrors = new Generator(errorableSession, 'zh-CN').errors;
 var enUsErrors = new Generator(errorableSession, 'en-US').errors;
 
+//cnErrors.SessionNotFound
+//cnErrors.SessionMiddlewareNotFound
+//cnErrors.SessionExpired
+
 ```
 ## License
 
